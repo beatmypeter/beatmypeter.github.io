@@ -1,18 +1,18 @@
 // Fan-Made Gallery
 const galleryImages = [
-    'https://via.placeholder.com/200?text=Fan+Art+1',
-    'https://via.placeholder.com/200?text=Fan+Art+2',
-    'https://via.placeholder.com/200?text=Fan+Art+3',
-    'https://via.placeholder.com/200?text=Fan+Art+4',
-    'https://via.placeholder.com/200?text=Fan+Art+5',
+    "fan_art_1.png",
+    "fan_art_2.png",
+    "fan_art_3.png",
+    "fan_art_4.png",
+    "fan_art_5.png"
 ];
 
-const galleryContainer = document.getElementById('gallery-container');
+const galleryContainer = document.getElementById("gallery-container");
 
 galleryImages.forEach(imageUrl => {
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     img.src = imageUrl;
-    img.alt = 'Fan-made art';
+    img.alt = "Fan-made art";
     galleryContainer.appendChild(img);
 });
 
